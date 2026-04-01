@@ -48,16 +48,52 @@
 
 // console.log(lapsCompleted)
 
-let countEl = document.getElementById("count-el")
+ let countEl = document.getElementById("count-el")
+ let saveEl = document.getElementById("save-el")
 console.log(countEl)
 let count = 0
 function increment() {
     count = count + 1
-    countEl.innerText = count
+    countEl.textContent = count
 }
 
-function decrement() {
-    count = count - 1
-    countEl.innerText = count  
-}
-console.log(count)
+ function decrement() {
+     count = count - 1
+     countEl.textContent = count  
+ }
+ console.log(count)
+
+ function save() {
+     let countStr = count + " - "
+     saveEl.textContent += countStr
+     console.log(count)
+ }
+ function reset() {
+    count = 0
+    countEl.textContent = count
+ }
+
+// let message = "You have three new notifications"
+
+// console.log(message)
+
+// let messageTouser = "we have logged"
+
+
+// let meme = "you out"
+
+
+// let message = messageTouser + ", " + meme
+
+// console.log(message)
+
+// let myname = "will"
+// let greeting = "hi, my name is"
+// let myGreeting = greeting + " " + myname
+// console.log(myGreeting)
+// let welcomeEl = document.getElementById("welcome-el")
+// let myname = "Will"
+// let greeting = "Welcome back"
+
+// welcomeEl.innerText = greeting + ", " + myname
+// console.log(welcomeEl)
