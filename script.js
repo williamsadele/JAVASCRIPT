@@ -1,29 +1,15 @@
-let num1 = 1
-let num2 = 5
+let firstCard = 10
+let secondCard = 11
 
-let num1El = document.getElementById("num1-el")
-num1El.textContent = num1
+let sum = firstCard + secondCard
+console.log(sum)
 
-let num2El = document.getElementById("num2-el")
-num2El.textContent = num2
-
-let resultEl = document.getElementById("result-el")
-
-
-function add(){
-    let result = num1 + num2
-    resultEl.textContent = "Answer: " + result
+if (sum < 21) {
+    console.log("Do you want to draw a new card?")
 }
-function subtract(){
-    let result = num1 - num2
-    resultEl.textContent = "Answer: " + result
+else if (sum === 21) {
+    console.log("Wohoo! You've got Blackjack!")
 }
-function multiply(){
-    let result = num1 * num2
-    resultEl.textContent = "Answer: " + result
+else  {
+    console.log("You're out of the game!")
 }
-function divide(){
-    let result = num1 / num2
-    resultEl.textContent = "Answer: " + result
-}
-console.log(resultEl)
