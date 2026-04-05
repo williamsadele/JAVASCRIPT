@@ -16,3 +16,7 @@ button{
 #increment-btn {
     background-color: #4CAF50;
 }
+p{
+    color: red;
+    font-size: 20px;
+}
