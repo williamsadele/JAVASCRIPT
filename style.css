@@ -1,22 +1,19 @@
 body{
+    font-family: trebuchet ms, verdana, arial, sans-serif;
     font-weight: 600;
+    background: rgb(212, 145, 145);
+    text-align:center;
 }
-button{
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-#increment-btn {
-    background-color: #4CAF50;
+h1{
+    color: purple;
 }
 p{
-    color: red;
     font-size: 20px;
+}
+#start-btn{
+    background: goldenrod;
+    border-radius: 10px;
+    padding: 10px;
+    border:none;
+    font-weight: 600;
 }
