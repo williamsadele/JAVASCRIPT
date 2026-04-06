@@ -1,9 +1,15 @@
-let age = 22
-age = 22 - 1
-if (age < 22) {
-    console.log("You are not old enough to enter")
+
+
+let age = 100
+
+if (age < 100) {
+    console.log("Not yet")
 }
 
-else {
-    console.log("Welcome!")
+else if(age === 100) {
+    console.log("Its timeeeee")
+}
+
+else{
+    console.log("You already did this bro")
 }
