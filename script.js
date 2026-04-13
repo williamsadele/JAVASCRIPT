@@ -1,5 +1,6 @@
-let cards = [6,9,5]
+let sentence = ["Hello", "my", "name", "is", "Per"]
+let greetingEl = document.getElementById("greeting-el")
 
-for (let i = 0; i < cards.length; i += 1)  [
-    console.log(cards[i])
-]
+for (let i = 0; i < sentence.length; i++) {
+    greetingEl.textContent += sentence[i] + " "
+}
