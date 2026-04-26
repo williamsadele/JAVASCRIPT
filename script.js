@@ -1,5 +1,5 @@
-// let firstCard = 10
-// let secondCard = 11
+// let firstCard = getRandomCard()
+// let secondCard = getRandomCard()
 // let sum = firstCard + secondCard
 // let cards = [firstCard, secondCard]
 // let isAlive = true
@@ -11,6 +11,9 @@
 
 // function startGame() {
 //     renderGame()
+// }
+// function getRandomCard() {
+//     return 5
 // }
 // function renderGame() {
 //     if (sum <= 20) {
@@ -34,7 +37,7 @@
 // }
 
 // function newCard() {
-//     let card = 5
+//     let card = getRandomCard()
 //     sum += card
 //     cards.push(card)
 //     renderGame()
@@ -43,24 +46,8 @@
 // sumEl.textContent = "Sum: " + sum
 // cardsEl.textContent = "Cards: " + firstCard + ", " + secondCard
 
-let player1Time = 102
-let player2Time = 107
+// let randomNumber = Math.random() * 6
 
-function getFastestRaceTime() {
-    if (player1Time < player2Time) {
-        return player1Time
-    }
-    else if (player2Time < player1Time) {
-        return player2Time
-    }
-    else {
-        return player1Time
-    }
-}
-let fastestTime = getFastestRaceTime()
-console.log(fastestTime)
-function totalRaceTime() {
-    return player1Time + player2Time
-}
-let totalTime = totalRaceTime()
-console.log(totalTime)
+let flooredNumber = Math.floor(Math.random() * 6) + 8
+
+console.log(flooredNumber)
