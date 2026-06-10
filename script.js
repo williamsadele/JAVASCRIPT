@@ -1,9 +1,9 @@
-let hasSolvedChallenge = false;
-let hasHintsLeft = false;
+let likesDocumentaries = true;
+let likesStartups = true;
 
-if (hasSolvedChallenge === false && hasHintsLeft === false) {
-    showSolution();
+if(likesDocumentaries === true || likesStartups === true) {
+    recommendMovie()
 }
-function showSolution() {
-    console.log("Showing the solution...");
+function recommendMovie() {
+    console.log("You should watch 'The Social Dilemma'!");
 }
