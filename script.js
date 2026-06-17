@@ -9,9 +9,11 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 let playerEl = document.getElementById("player-el")
-let playerName = "Bill"
-let playerChips = 145
-playerEl.textContent = playerName + ": $" + playerChips
+let player = {
+    name: "Billy",
+    chips: 145
+}
+playerEl.textContent = player.name + ": $" + player.chips
 
 function startGame() {
     renderGame()
