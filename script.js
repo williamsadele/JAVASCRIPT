@@ -1,62 +1,78 @@
-let firstCard = getRandomCard()
-let secondCard = getRandomCard()
-let sum = firstCard + secondCard
-let cards = [firstCard, secondCard]
-let isAlive = true
-let hasBlackJack = false
-let message = ""
-let messageEl = document.getElementById("message-el")
-let sumEl = document.getElementById("sum-el")
-let cardsEl = document.getElementById("cards-el")
-let playerEl = document.getElementById("player-el")
-let player = {
-    name: "Billy",
-    chips: 145
-}
-playerEl.textContent = player.name + ": $" + player.chips
+// let player = {
+//     name: "Billy",
+//     chips: 145
+// }
+// let firstCard = getRandomCard()
+// let secondCard = getRandomCard()
+// let sum = firstCard + secondCard
+// let cards = [firstCard, secondCard]
+// let isAlive = true
+// let hasBlackJack = false
+// let message = ""
+// let messageEl = document.getElementById("message-el")
+// let sumEl = document.getElementById("sum-el")
+// let cardsEl = document.getElementById("cards-el")
+// let playerEl = document.getElementById("player-el")
 
-function startGame() {
-    renderGame()
-}
-function getRandomCard() {
-    let randomNumber = Math.floor(Math.random() * 13) + 1
-    if (randomNumber > 10) {
-        return 10
-    }
-    else if (randomNumber === 1) {
-        return 11
-    }
-    else {
-        return randomNumber
-    }
-}
-function renderGame() {
-    if (sum <= 20) {
-    message = "Do you want to draw a new card?"
-}
+// playerEl.textContent = player.name + ": $" + player.chips
 
-else if (sum === 21) {
-    message = "Woohoo!"
-    hasBlackJack = true
-}
+// function startGame() {
+//     renderGame()
+// }
+// function getRandomCard() {
+//     let randomNumber = Math.floor(Math.random() * 13) + 1
+//     if (randomNumber > 10) {
+//         return 10
+//     }
+//     else if (randomNumber === 1) {
+//         return 11
+//     }
+//     else {
+//         return randomNumber
+//     }
+// }
+// function renderGame() {
+//     if (sum <= 20) {
+//     message = "Do you want to draw a new card?"
+// }
 
-else{
-    message = "You loose"
-    isAlive = false
-}
-messageEl.textContent = message
-sumEl.textContent = "Sum: " + sum
-cardsEl.textContent = "Cards: "
-for (let i = 0; i < cards.length; i++) {
-    cardsEl.textContent += cards[i] + " "
-}
-}
+// else if (sum === 21) {
+//     message = "Woohoo!"
+//     hasBlackJack = true
+// }
 
-function newCard() {
-    if(isAlive === true && hasBlackJack === false) {
-    let card = getRandomCard()
-    sum += card
-    cards.push(card)
-    renderGame()
+// else{
+//     message = "You loose"
+//     isAlive = false
+// }
+// messageEl.textContent = message
+// sumEl.textContent = "Sum: " + sum
+// cardsEl.textContent = "Cards: "
+// for (let i = 0; i < cards.length; i++) {
+//     cardsEl.textContent += cards[i] + " "
+// }
+// }
+
+// function newCard() {
+//     if(isAlive === true && hasBlackJack === false) {
+//     let card = getRandomCard()
+//     sum += card
+//     cards.push(card)
+//     renderGame()
+//     }
+// }
+
+let player1Time = Math.floor(Math.random() * 6) + 1
+let player2Time = Math.floor(Math.random() * 6) + 1
+
+function race() {
+    if (player1Time < player2Time) {
+        console.log("Player 1 wins!");
+    } else if (player2Time < player1Time) {
+        console.log("Player 2 wins!");
+    } else {
+        console.log("It's a tie!");
     }
 }
+let fastestRace = race()
+console.log(fastestRace)
