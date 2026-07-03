@@ -62,30 +62,18 @@
 //     }
 // }
 
-// let person = {
-//     name: "Billy",
-//     age: 22,
-//     country: "Nigeria"
-// }
-// function logdata() {
-//     console.log(person.name + " is " + person.age + " years old and lives in " + person.country)
-// }
-// logdata()
+let fruits = ["apple", "orange", "apple", "orange", "apple"]
+let appleShelf = document.getElementById("apple-shelf")
+let orangeShelf = document.getElementById("orange-shelf")
 
-// let countries = ["Germany", "France", "England", "Italy", "Spain"]
-// for (let i = 0; i < countries.length; i++) {
-//     console.log(countries[i])
-// }
-// countries.pop()
-// countries.push("Nigeria")
-// console.log(countries)
-// countries.shift()
-// countries.unshift("Ghana")
-// console.log(countries)
-
-let dayOfMonth = 16
-let weekday = "Friday"
-
-if (dayOfMonth === 13 && weekday === "Friday") {
-    console.log("boo")
+function sortFruit() {
+    for (let i = 0; i < fruits.length; i++) {
+    if (fruits[i] === "apple") {
+        appleShelf.textContent += "apple "
+    }
+    else if (fruits[i] === "orange") {
+        orangeShelf.textContent += "orange "
+    }
 }
+}
+sortFruit()
