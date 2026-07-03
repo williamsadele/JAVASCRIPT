@@ -72,13 +72,20 @@
 // }
 // logdata()
 
-let countries = ["Germany", "France", "England", "Italy", "Spain"]
-for (let i = 0; i < countries.length; i++) {
-    console.log(countries[i])
+// let countries = ["Germany", "France", "England", "Italy", "Spain"]
+// for (let i = 0; i < countries.length; i++) {
+//     console.log(countries[i])
+// }
+// countries.pop()
+// countries.push("Nigeria")
+// console.log(countries)
+// countries.shift()
+// countries.unshift("Ghana")
+// console.log(countries)
+
+let dayOfMonth = 16
+let weekday = "Friday"
+
+if (dayOfMonth === 13 && weekday === "Friday") {
+    console.log("boo")
 }
-countries.pop()
-countries.push("Nigeria")
-console.log(countries)
-countries.shift()
-countries.unshift("Ghana")
-console.log(countries)
