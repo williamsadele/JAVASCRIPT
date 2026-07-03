@@ -62,17 +62,20 @@
 //     }
 // }
 
-let player1Time = Math.floor(Math.random() * 6) + 1
-let player2Time = Math.floor(Math.random() * 6) + 1
+// let person = {
+//     name: "Billy",
+//     age: 22,
+//     country: "Nigeria"
+// }
+// function logdata() {
+//     console.log(person.name + " is " + person.age + " years old and lives in " + person.country)
+// }
+// logdata()
 
-function race() {
-    if (player1Time < player2Time) {
-        console.log("Player 1 wins!");
-    } else if (player2Time < player1Time) {
-        console.log("Player 2 wins!");
-    } else {
-        console.log("It's a tie!");
-    }
+let countries = ["Germany", "France", "England", "Italy", "Spain"]
+for (let i = 0; i < countries.length; i++) {
+    console.log(countries[i])
 }
-let fastestRace = race()
-console.log(fastestRace)
+countries.pop()
+countries.push("Nigeria")
+console.log(countries)
