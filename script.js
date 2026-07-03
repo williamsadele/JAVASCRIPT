@@ -79,3 +79,6 @@ for (let i = 0; i < countries.length; i++) {
 countries.pop()
 countries.push("Nigeria")
 console.log(countries)
+countries.shift()
+countries.unshift("Ghana")
+console.log(countries)
