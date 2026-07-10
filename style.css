@@ -4,20 +4,11 @@ body{
     background: rgb(219, 218, 218);
     text-align:center;
 }
-input{
-    padding: 10px;
-    margin: 20px;
-    width: 100%;
-    box-sizing: border-box;
-    border: 1px solid #5f9341;
-}
-
-button{
-    background: #5f9341;
+#box{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(59, 187, 42);
     color: white;
-    border: none;
-    padding: 10px 20px;
-    font-weight: 600;
-    cursor: pointer;
-    font-weight: bold;
+    line-height: 200px;
+    margin: auto;
 }
