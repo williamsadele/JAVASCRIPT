@@ -1,5 +1,3 @@
-let openBox = document.getElementById("box")
-
-openBox.addEventListener("click", function(){
-    console.log("Congratulations!")
-})
+let myLeads = []
+const inputEl =document.getElementById("input-el")
+const inputBtn =document.getElementById("input-btn")
