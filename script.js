@@ -13,3 +13,6 @@
 // })
 const container = document.getElementById("container")
 container.innerHTML = "<button>Click Me</button>"
+container.addEventListener("click", function(){
+    container.innerHTML += "<p>THANK YOU!</p>"
+})
