@@ -6,10 +6,8 @@ const ulEl = document.getElementById("ul-el")
 
 openBox.addEventListener("click", function(){
     myLeads.push(inputEl.value)
-    console.log(myLeads)
+    ulEl.textContent = ""
+    for (let i = 0; i < myLeads.length; i++) {
+        ulEl.textContent += myLeads[i] + " "
+    }
 })
-
-console.log(ulEl)
-for (let i = 0; i < myLeads.length; i++) {
-    ulEl.textContent += myLeads[i] + " "
-}
