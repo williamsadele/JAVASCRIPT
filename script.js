@@ -11,8 +11,14 @@ openBox.addEventListener("click", function(){
         ulEl.innerHTML += "<li>" + myLeads[i] + "</li>"
     }
 })
-// const container = document.getElementById("container")
-// container.innerHTML = "<button>Click Me</button>"
-// container.addEventListener("click", function(){
-//     container.innerHTML += "<p>THANK YOU!</p>"
-// })
+const container = document.getElementById("container")
+container.innerHTML = "<button>Click Me</button>"
+container.addEventListener("click", function(){
+    container.innerHTML += "<p>THANK YOU!</p>"
+})
+const li = document.createElement("li")
+li.textContent = myLeads[i]
+ulEl.append(li)
+
+li.textContent = myLeads[i]
+ulEl.append(li)
