@@ -19,5 +19,7 @@ button{
     color: white;
     line-height: 100px;
     margin: auto;
-
+}
+li{
+    text-align: left;
 }
