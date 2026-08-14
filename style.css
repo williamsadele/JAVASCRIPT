@@ -6,12 +6,20 @@ body{
     min-width: 400px;
 }
 #box{
-    width: 100px;
-    height: 100px;
-    background-color: rgb(59, 187, 42);
+    background-color: rgb(21, 95, 11);
     color: white;
-    line-height: 100px;
-    margin: auto;
+    border: none;
+    padding: 10px 20px;
+    width: 30%;
+    margin: 5px 5px;
+}
+#deletebtn{
+    background-color: rgb(247, 252, 247);
+    color: rgb(21, 95, 11);
+    border: 1px solid rgb(21, 95, 11);
+    padding: 10px 20px;
+    width: 30%;
+    margin: 5px 5px;
 }
 li{
     text-align: left;
@@ -21,5 +29,9 @@ input{
     background-color: #c2d3b8;
     border: 1px solid rgb(74, 119, 77);
     padding: 10px;
-    width: 300px;
+    width: 100%;
+}
+.buttons{
+    display: flex;
+    justify-content:flex-start;
 }
